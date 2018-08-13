@@ -1,0 +1,22 @@
+<nav>
+  <span>
+    <h3>{{name}}</h3>
+    <!--plain Interpolation-->
+    <h3>Welcome {{name}}!!</h3>
+    <!--Interpolation with some external cocantenation-->
+    <h3>{{'Welcome ' + name}}!!</h3>
+    <!--cocantenation within interpolation-->
+    <h3>{{2 + name.length}}!!</h3>
+    <!--Arithmetic inside interpolation-->
+    <h3>{{name.length}}!!</h3>
+    <!--Javascript attributes within interpolation-->
+    <h3>{{name.toUpperCase()}}!!</h3>
+    <!--Javascript methods within interpolation-->
+
+    <!-- trying some crazy shit like assigning a variable inside of an
+      interpolation will lead to an error called template parse error -->
+
+    <!-- Interpolation also does not have access to global variables such as window and browser
+    you can however access this variables in the template file and bind it to the html -->
+  </span>
+</nav>
