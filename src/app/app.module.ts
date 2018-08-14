@@ -10,6 +10,9 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { GoalComponent } from "./goal/goal.component";
 import { GoalDetailsComponent } from "./goal-details/goal-details.component";
 import { StrikethroughDirective } from "./strikethrough.directive";
+import { AboutComponent } from "./about/about.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
+import { RoutingModule } from "./routing/routing.module";
 
 @NgModule({
   declarations: [
@@ -17,13 +20,16 @@ import { StrikethroughDirective } from "./strikethrough.directive";
     NavbarComponent,
     GoalComponent,
     GoalDetailsComponent,
-    StrikethroughDirective
+    StrikethroughDirective,
+    AboutComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgProgressModule.forRoot(),
-    NgProgressHttpModule
+    NgProgressHttpModule,
+    RoutingModule
   ],
   providers: [AlertsService],
   bootstrap: [AppComponent]
